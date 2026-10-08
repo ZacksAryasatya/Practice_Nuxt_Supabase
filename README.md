@@ -1,6 +1,6 @@
 # Vendor & Contract Management
 
-Aplikasi latihan manajemen vendor dan kontrak untuk review Project Manager.
+Aplikasi web latihan untuk mengelola data vendor dan kontrak secara terpusat. Aplikasi ini dibuat untuk mempraktikkan Nuxt 4, Tailwind CSS, dan Supabase, mencakup CRUD vendor dan kontrak, autentikasi admin, pengamanan data dengan RLS, pengelolaan logo dan dokumen kontrak melalui Supabase Storage, serta pembaruan data langsung menggunakan Supabase Realtime. Dashboard membantu memantau vendor, kontrak aktif, dan kontrak yang mendekati tanggal berakhir.
 
 ## Tech stack
 
