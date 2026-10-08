@@ -9,7 +9,6 @@ Dokumentasi untuk aplikasi latihan **Vendor & Contract Management**. Dokumen ini
 - [Flowcharts](./flowcharts.md) — alur autentikasi, CRUD, upload file, dan realtime.
 - [Technical Decisions](./technical-decisions.md) — acuan Nuxt, Tailwind CSS, Supabase, security, dan SOP.
 - [Migration Supabase](../supabase/migrations) — SQL schema, authorization, dan koreksi policy.
-- [Tes authorization](../supabase/tests/authorization_rls.test.sql) — pemeriksaan dasar konfigurasi database untuk test runner pgTAP.
 
 ## Menjalankan migration
 

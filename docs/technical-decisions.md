@@ -71,7 +71,6 @@ Versi dependency dikunci di `package-lock.json`; perubahan dependency dilakukan 
 - Identitas admin dibatasi lewat tabel allowlist internal yang tidak terekspos (`app_admins` di `public` dengan seluruh akses client dicabut), yang hanya diisi operator melalui migration/SQL tepercaya. Policy memakai helper `SECURITY DEFINER` di schema non-exposed, dengan `search_path` kosong/dikunci dan execute grant minimum. Jangan memberikan akses tulis ke setiap akun `authenticated`.
 - Policy database mencakup seluruh tabel, termasuk `app_settings` dan metadata file. Jangan mengandalkan frontend atau `user_metadata` yang dapat diedit pengguna untuk menentukan admin.
 - Simpan skema, constraint, grants, RLS, trigger, dan index sebagai migration yang bisa direproduksi; hindari perubahan manual yang tidak dicatat.
-- File `supabase/tests/authorization_rls.test.sql` berisi pemeriksaan dasar RLS, grants, bucket Storage, dan publication Realtime. Belum dijalankan melalui runner pgTAP.
 - Gunakan generated `database.types.ts`, validasi input di UI dan database, prepared query melalui client SDK, serta tampilkan error yang tidak membocorkan rahasia.
 - Aktifkan proteksi login yang tersedia pada Supabase Auth, validasi redirect URL secara ketat, dan gunakan HTTPS saat deployment.
 
